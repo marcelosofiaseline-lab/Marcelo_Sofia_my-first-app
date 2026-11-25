@@ -67,7 +67,6 @@ section h2 {
 }
 
 section h2::before {
-  content: "✿ ";
   color: var(--pink-medium);
 }
 
@@ -100,7 +99,6 @@ ul li:hover {
 }
 
 ul li::before {
-  content: "✿ ";
   color: var(--pink-medium);
 }
 
@@ -135,7 +133,58 @@ button:hover {
 
 button:active {
   transform: translateY(0);
-  box-shadow: 0 2px 5px rgba(184, 63, 105, 0.3);
+  box-shadow: 0 2px 5px rgba(255, 112, 162, 0.3);
+}
+
+.interaction p {
+  padding: 12px 16px;
+  border-left: 4px solid #b83f69;
+  background: white;
+}
+
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding: 12px 32px;
+  background: #962f54;
+}
+
+.brand {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.topnav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topnav ul a {
+  display: block;
+  padding: 6px 14px;
+  border-radius: 6px;
+  color: #f2e8ec;
+  text-decoration: none;
+}
+
+.topnav ul a:hover {
+  background: rgba(219, 156, 180, 0.12);
+}
+
+/* Added by routerLinkActive when the link matches the current URL. */
+.topnav ul a.active {
+  background: #f9c6d8;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 @media (max-width: 600px) {

@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles: apply to every component in the application. */
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #fbdce7 0%, var(--pink-page) 100%);
+  background-attachment: fixed;
+}
+
+section {
+  margin: 26px 0;
+}
+
+/* Page container, shared by every routed page. */
+.resume {
+  --pink-deep: #b83f69;
+  --pink-deeper: #962f54;
+  --pink-medium: #ee8fb0;
+  --pink-soft: #f9c6d8;
+  --pink-blush: #fde3ec;
+  --pink-card: #fff0f5;
+  --pink-page: #f8d3e0;
+  --text-main: #4a2634;
+  --text-soft: #8a5468;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  color: var(--text-main);
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.75;
+  background: var(--pink-card);
+  border: 2px solid var(--pink-soft);
+  border-top: 10px solid var(--pink-medium);
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(184, 63, 105, 0.18);
+}
+
+
+/* Shared heading style, used by several components. */
+.section-title {
+  color: var(--pink-deep);
+  background: var(--pink-blush);
+  border-left: 6px solid var(--pink-medium);
+  border-radius: 8px;
+  padding: 8px 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 600px) {
+  .resume {
+    margin: 24px auto;
+    padding: 0 18px;
+  }
+}
